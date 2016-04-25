@@ -8,8 +8,8 @@
 
 function connectDb(){
       $host="localhost"; // ou sql.hebergeur.com dans lr cas d'une bdd distante
-      $user="chris";                  // login
-      $password="balleaupanier";      // mot de passe
+      $user="";                  // login
+      $password="";              // mot de passe
       $dbname="putridTomatoes";
 =======
 /* Fonction de connexion en local à la base de données*/
