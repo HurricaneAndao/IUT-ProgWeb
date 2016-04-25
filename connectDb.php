@@ -1,4 +1,5 @@
 <?php
+<<<<<<< HEAD
 /* Fonction de connexion à la base de données*/
 
 //Options de debugging
@@ -10,6 +11,14 @@ function connectDb(){
       $user="chris";                  // login
       $password="balleaupanier";      // mot de passe
       $dbname="putridTomatoes";
+=======
+/* Fonction de connexion en local à la base de données*/
+ function connectDb(){
+      $host="localhost"; // ou sql.hebergeur.com
+      $user="";      // ou login
+      $password="";      // mot de passe
+      $dbname="";
+>>>>>>> origin/master
   try {
        $bdd=new PDO('mysql:host='.$host.';dbname='.$dbname.
                     ';charset=utf8',$user,$password);
@@ -17,5 +26,11 @@ function connectDb(){
       } catch (Exception $e) {
           die('Erreur : '.$e->getMessage());   
   }
+<<<<<<< HEAD
       }
+=======
+ }
+ 
+ // echo "Ca marche";
+>>>>>>> origin/master
 ?>
